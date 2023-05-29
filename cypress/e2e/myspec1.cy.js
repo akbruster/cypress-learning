@@ -15,7 +15,8 @@ describe('template spec', () => {
     cy.xpath('//textarea[@placeholder="Write your article (in markdown)"][1]').type('This is new title 12212878712!!')
     cy.xpath('//input[@placeholder="Enter tags"][1]').type('tagtitle1')
     //cy.xpath('//button[normalize-space()="Publish Article"]').click()
-    cy.xpath('//button[normalize-space()="Publish Article"][1]').click()
+    cy.xpath('//button[normalize-space()="Publish Article"][1]').click().click()
+    //cy.get('.btn').click('bottom')
     // cy.xpath('//button[normalize-space()="Publish Article"][1]').click()
 
     cy.get(':nth-child(2) > .preview-link > h1').click()
